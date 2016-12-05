@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/> 
+<meta name="author" content=""/> 
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+
+<title>&#29483;&#21451;&#22280;</title>
+
+</head>
+<SCRIPT language=javascript1.2>
+<!--
+hexa = new Array(16);
+for(var i = 0; i < 10; i++) hexa[i] = i; 
+hexa[10]="a";
+hexa[11]="b"; 
+hexa[12]="c";
+hexa[13]="d"; 
+hexa[14]="e"; 
+hexa[15]="f";
+function hex(i)
+{
+if (i < 0) return "00";
+else if (i > 255) return "ff"; 
+else return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+}
+function setbgColor(r, g, b) 
+{ 
+var hr = hex(r); 
+var hg = hex(g); 
+var hb = hex(b); 
+document.bgColor = "#"+hr+hg+hb;
+}
+function fade(sr, sg, sb, er, eg, eb, step) 
+{ 
+for(var i = 0; i <= step; i++) 
+{ 
+setbgColor( Math.floor(sr * ((step-i)/step) + er * (i/step)), 
+Math.floor(sg * ((step-i)/step) + eg * (i/step)), Math.floor(sb * 
+((step-i)/step) + eb * (i/step))); 
+}
+}
+
+
+//-->
+</SCRIPT>
+
+
+<body>
+<BODY aLink=#ffffff bgColor=#ffffff link=#ffffff onload=start_it() 
+onunload=end_it() text=#ffffff topMargin=0 vLink=#ffffff>
+
+<img src="images/star.gif" alt="" width="21" height="21" />
+<SCRIPT language=javascript1.2>
+<!--
+for(i=1;i<=10;i++)
+{
+document.write("<div id=\"star"+i+"\" style=\"position:absolute;top:80%;left:"+(Math.floor(Math.random()*5)+9*(i-1))+"%;width:21;height:21;visibility:hidden;\"><dd><img src=\"images/star.gif\" WIDTH=\"21\" HEIGHT=\"21\"></dd></div>");
+}	
+function randommove()
+{	
+	for(i=1;i<=10;i++)
+	eval("star"+i+".style.top=get_top()");
+	
+}		
+
+function get_top()
+{
+var t,t2;
+t=Math.floor(Math.random()*380);
+t2=t.toString()+"px";
+return(t2);
+}
+function set_visible()
+{
+	for(i=1;i<=10;i++)
+	eval("star"+i+".style.visibility=\"visible\"");
+	banner.style.visibility="visible";
+	friends.style.visibility="visible";
+	high(pic);
+		
+}
+function bar_show()
+{	bar.style.visibility="visible";
+}
+function start_it()
+{
+fade(255,255,255, 0,0,0, 50);
+setInterval("randommove()",1000);
+set_visible();
+setTimeout("bar_show()",2000);
+}
+function end_it()
+{
+banner.style.visibility="hidden";
+friends.style.visibility="hidden";
+pic.style.visibility="hidden";
+fade(0,0,0,255,255,255,10);
+}
+-->
+</SCRIPT>
+
+
+<div id="wrapper">
+  <div id="container">
+
+<div class="title">
+	
+	<h1><a href="subindex/friends.html"><img src="images/logo.png" alt="" width="149" height="48" /></a></h1>
+
+</div>
+
+<div class="header"><img src="images/friends.gif" alt="" width="750" height="250" /></div>
+
+<div class="navigation">
+	
+	<a href="index_zl.html" target="_self">&#25105;&#26159;&#29483;</a>
+	<a href="maodian.html" target="_self">&#21941;&#23398;&#26657;</a>
+	<a href="cartoon.html#ha" target="_self">&#19968;&#31389;&#21941;</a>
+	<a href="jseffect.html" target="_self" id="active">&#29483;&#21451;&#22280;</a>
+    <a href="rephoto.html#ha" target="_self">&#21941;&#39118;&#37319;</a>
+    <a href="lab.html#ha" target="_self">&#25214;&#20320;&#21941;</a>
+	<div class="clearer"></div>
+
+</div>
+
+<div class="main" id="two-columns">
+
+	<div class="col2">
+
+		<div class="left">
+
+			<div class="content">
+
+				<h1>&#29483;&#21451;&#19968;&#31657;&#31568;</h1>
+              <p>&nbsp;</p>
+                <p><img src="images/dtm.jpg" alt="" width="393" height="294" /></p>
+                <h3><img src="images/f2.png" alt="" width="100" height="100" align="middle" />&#38463;&#33729;&#20180;</h3>
+                <ul>
+                  <li>&#20851;&#31995;:  &#23567;&#23398;&#27515;&#20826;</li>
+                  <li>&#20307;&#22411;&#65306;&#20013;&#31561; </li>
+                  <li>
+                    <p>&#23545;&#23567;&#23401;&#21451;&#21892;&#65306;&#9734;&#9734;&#9734;&#9734;</p>
+                  </li>
+                  <li>&#23545;&#29983;&#20154;&#21451;&#21892;&#65306;&#9734;&#9734;&#9734;</li>
+                  <li>&#23545;&#21160;&#29289;&#21451;&#21892;&#65306;&#9734;&#9734;&#9734;&#9734;&#9734;&lsquo;</li>
+                  <li>&#25152;&#36848;&#21697;&#31181;&#65306;&#24322;&#22269;&#30701;&#27611;&#29483; </li>
+                </ul>
+                <h3><img src="images/f1.png" alt="" width="100" height="100" align="middle" />DTM</h3>
+                <ul>
+                  <li>&#20851;&#31995;:  &#20013;&#23398;&#25439;&#21451;</li>
+                  <li>&#20307;&#22411;&#65306;&#20559;&#32982; </li>
+                  <li>
+                    <p>&#31896;&#20154;&#25104;&#37117;&#65306;&#9734;&#9734;&#9734;&#9734;</p>
+                  </li>
+                  <li>&#21916;&#21483;&#31243;&#24230;&#65306;&#9734;&#9734;&#9734;</li>
+                  <li>&#21475;&#27700;&#31243;&#24230;&#65306;&#9734;&#9734;&#9734;&#9734;&#9734;&lsquo;</li>
+                  <li>&#25152;&#36848;&#21697;&#31181;&#65306;&#40857;&#29483;</li>
+                </ul>
+                <h3><img src="images/f3.PNG" alt="" width="100" height="100" align="middle" />&#24378;&#24369;&#24369;</h3>
+                <ul>
+                  <li>&#20851;&#31995;:  &#22823;&#23398;&#33293;&#21451;</li>
+                  <li>&#20307;&#22411;&#65306;&#20559;&#30246; </li>
+                  <li>&#36816;&#21160;&#37327;&#22823;&#23567;&#65306;&#9734;&#9734;&#9734; </li>
+                  <li>&#21487;&#35757;&#32451;&#24615;&#65306;&#9734;&#9734;</li>
+                  <li>&#32784;&#23506;&#31243;&#24230;&#65306;&#9734;&#9734;&#9734;&lsquo;&#9734;</li>
+                  <li>&#25152;&#36848;&#21697;&#31181;&#65306;&#33521;&#22269;&#30701;&#27611;&#29483;</li>
+                </ul>
+                <hr />
+                <p align="right">&nbsp;</p>
+                <blockquote>
+                  <p>&#36825;&#20040;&#24191;&#30340;&#29483;&#38469;&#22280;&#65292;&#21703;&#22622;&#22622;&#65281;&#65281;(&#3665;&#336;&#1076;&#336;)b</p>
+                </blockquote>
+                <p align="center">&nbsp;</p>
+			</div>
+	
+		</div>
+
+		<div class="right">
+			
+			<div class="content">
+
+			  <h2>Friends</h2>
+                <ul class="block">
+                  <li></li>
+                </ul>
+                <div></div>
+                <div> </div>
+<p>&#21451;&#24773;</p>
+				<h2>From majestic mountains and valleys of green to crystal clear waters so blue, this wish is coming to you.  </h2>
+				<h2>&#36234;&#36807;&#38738;&#32736;&#30340;&#23803;&#23725;&#21644;&#23665;&#35895;&#65292;&#30452;&#21040;&#26230;&#33721;&#28251;&#34013;&#30340;&#27700;&#36793;&#65292;&#39134;&#26469;&#20102;&#25105;&#23545;&#20320;&#30340;&#31069;&#24895;&#12290;  </h2>
+				<h2>&nbsp;</h2>
+				<h2>It's joy to know you, wishing the nicest things always for you, not only today, but all the year through because you are really a joy to know.  </h2>
+				<h2>&#35748;&#35782;&#20320;&#26159;&#19968;&#31181;&#24555;&#24944;&#65292;&#24895;&#20320;&#27704;&#36828;&#25317;&#26377;&#26368;&#32654;&#22909;&#30340;&#19996;&#35199;&#65292;&#19981;&#20165;&#20170;&#22825;&#25317;&#26377;&#65292;&#32780;&#19988;&#22825;&#22825;&#25317;&#26377;&#65292;&#22240;&#20026;&#35748;&#35782;&#20320;&#30495;&#26159;&#19968;&#31181;&#24944;&#34249;&#12290;  </h2>
+				<h2>&nbsp;</h2>
+				<h2>A friend is a loving companion at all times.  </h2>
+				<h2>&#26379;&#21451;&#26159;&#27704;&#20037;&#30340;&#30693;&#24515;&#20276;&#20387;&#12290;  </h2>
+				<h2>&nbsp;</h2>
+				<h2>When I think of you the miles between us disappear.  </h2>
+				<h2>&#24403;&#25105;&#24819;&#36215;&#20320;&#65292;&#30456;&#38548;&#21315;&#37324;&#65292;&#22914;&#22312;&#21675;&#23610;&#12290;  </h2>
+				<h2>&nbsp;</h2>
+				<h2>You're wonderful friend, and I treasure you more with every year.  </h2>
+				<h2>&#20320;&#26159;&#19968;&#20301;&#38590;&#24471;&#30340;&#25370;&#21451;&#65292;&#25105;&#23545;&#20320;&#30340;&#29645;&#37325;&#19982;&#23681;&#20465;&#22686;&#12290;</h2>
+          </div>
+
+		</div>
+
+		<div class="clearer"></div>
+
+	</div>
+
+
+	<div class="bottom">
+
+		<div class="left">
+		
+			<h2>&#32852;&#31995;&#26041;&#24335;</h2>
+
+			<ul class="block">
+				<li><a href=""><span>&#25163;&#26426;</span><em>15866876840</em></a></li>
+				<li><a href=""><span>&#37038;&#31665;</span><em>761411927@qq.com</em></a></li>
+				<li><a href=""><span>&#22320;&#22336;</span><em>&#40060;&#23665;&#36335;5&#21495;&#20013;&#22269;&#28023;&#27915;&#22823;&#23398;1#325</em></a></li>
+				<li><a href=""><span>&#38498;&#31995;</span><em>&#20013;&#22269;&#28023;&#27915;&#22823;&#23398;&#27700;&#20135;&#23398;&#38498;</em></a></li>
+			</ul>
+			
+		</div>
+		<div class="right">
+		  <h2>&#22242;&#38431;</h2>
+		  <p>112-12&#32452;&#65292;&#32452;&#38271;&#29579;&#19968;&#37030;&#65292;&#32452;&#21592;&#28504;&#32918;&#20848;&#12289;&#35885;&#38671;&#12289;&#20052;&#29020;&#12289;&#21608;&#29840;</p>
+		  <h2>&#25104;&#21592;</h2>
+		  <table>
+		    <tr>
+		      <td><p><img src="images/bang.jpg" width="110" height="89" alt="" /></p>
+		        <p>&#32452;&#38271; &#29579;&#19968;&#37030;</p></td>
+		      <td style="width:5px"></td>
+		      <td><p><img src="images/pan.jpg" width="110" height="90" alt="" /></p>
+		        <p>&#32452;&#21592; &#28504;&#32918;&#20848;</p></td>
+		      <td style="width:5px">&nbsp;</td>
+		      <td><p><img src="images/tan.jpg" width="110" height="90" alt="" /></p>
+		        <p>&#32452;&#21592; &#35885;&#38671;</p></td>
+	        </tr>
+	      </table>
+		  <table>
+		    <tr>
+		      <td><p><img src="images/qiao.jpg" width="110" height="90" alt="" /></p>
+		        <p>&#32452;&#21592; &#20052;&#29020;</p></td>
+		      <td style="width:5px"></td>
+		      <td><p><img src="images/zhou.jpg" width="110" height="90" alt="" /></p>
+		        <p>&#32452;&#21592; &#21608;&#29840;</p></td>
+		      <td style="width:5px">&nbsp;</td>
+		      <td><p><img src="images/zao.jpg" width="110" height="90" alt="" /></p>
+	          <p>&#23567;&#32452;&#20316;&#19994;</p></td>
+	        </tr>
+	      </table>
+	    </div>
+		<div class="clearer"></div>
+
+	</div>
+
+
+	<div class="footer">
+		
+		<div class="left">
+			2014&#31934;&#24515;&#21046;&#20316;<a href="subindex/friends.html"></a>
+		</div>
+
+		<div class="right">
+			<a href="http://www.cssmoban.com/">&#21608;&#29840;&#20010;&#20154;&#32593;&#31449;</a></div>
+
+		<div class="clearer"></div>
+
+	</div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
